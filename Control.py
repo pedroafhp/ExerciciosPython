@@ -11,7 +11,9 @@ class Control:
                 '\n2. Trocar'                      +
                 '\n3. Tabuada'                     +
                 '\n4. Média de Três Notas'         +
-                '\n5. Exercício 01'                )
+                '\n5. Exercício 01'                +
+                '\n6. Exercicio 02'                +
+                '\n7. Exercicio 07'                )
 
     def operacoes(self):
         while(self.opcao != 1):
@@ -50,5 +52,14 @@ class Control:
             elif self.opcao == 5:
                 num = int(input("Informe um número"))
                 print(self.modelo.exercicioUm(num))
+
+            elif self.opcao == 6:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioDois(num))
+
+            elif self.opcao == 7:
+                soma = int(input("A soma dos números de 0 a 100 é: ",soma))
+                print(self.modelo.exercicioTres(soma))
+
             else:
                 print('Opção escolida não é válida!')

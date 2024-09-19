@@ -24,3 +24,15 @@ class Model:
         for i in range(0, 11, 1):
             resultado += f'{i}\n'
         return resultado
+
+    def exercicioDois(self, num):
+        resultado = ""
+        for i in range(0, 20, 2):
+            resultado += f'{i}\n'
+        return resultado
+
+    def exercicioTres(self, soma):
+        soma = 0
+        for i in range(101):
+            soma += f'{i}\n'
+        return soma

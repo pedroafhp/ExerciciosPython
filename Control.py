@@ -6,14 +6,21 @@ class Control:
         self.opcao = 0
 
     def mostrarMenu(self):
-        print ('Escolha uma das opções abaixo: '   +
-                '\n1. Sair'                        +
-                '\n2. Trocar'                      +
-                '\n3. Tabuada'                     +
-                '\n4. Média de Três Notas'         +
-                '\n5. Exercício 01'                +
-                '\n6. Exercicio 02'                +
-                '\n7. Exercicio 07'                )
+        print ('Escolha uma das opções abaixo: '     +
+                '\n1.   Sair'                        +
+                '\n2.   Trocar'                      +
+                '\n3.   Tabuada'                     +
+                '\n4.   Média de Três Notas'         +
+                '\n5.   Exercício 01'                +
+                '\n6.   Exercicio 02'                +
+                '\n7.   Exercicio 03'                +
+                '\n8.   Exercicio 04'                +
+                '\n9.   Exercicio 05'                +
+                '\n10.  Exercicio 06'                +
+                '\n11.  Exercicio 07'                +
+                '\n12.  Exercicio 08'                +
+                '\n13.  Exercicio 09'                +
+                '\n14.  Exercicio 10'                )
 
     def operacoes(self):
         while(self.opcao != 1):
@@ -58,8 +65,32 @@ class Control:
                 print(self.modelo.exercicioDois(num))
 
             elif self.opcao == 7:
-                soma = int(input("A soma dos números de 0 a 100 é: ",soma))
-                print(self.modelo.exercicioTres(soma))
+                print(f'A soma dos números entre 1 e 100 é: {self.modelo.exercicioTres()}')
 
+            elif self.opcao == 8:
+                print(f'Os multiplos de 5, de 1 a 50 são: \n{self.modelo.exercicioQuatro()}')
+
+            elif self.opcao == 9:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioCinco(num))
+
+            elif self.opcao == 10:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioSeis(num))
+
+            elif self.opcao == 11:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioSete(num))
+
+            elif self.opcao == 12:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioOito(num))
+
+            elif self.opcao == 13:
+                num = int(input("Informe um número: "))
+                print(f'A soma dos números é: {self.modelo.exercicioNove(num)}')
+
+            elif self.opcao == 14:
+                print(f'Os números primos são: \n{self.modelo.exercicioDez()}')
             else:
                 print('Opção escolida não é válida!')

@@ -20,7 +20,12 @@ class Control:
                 '\n11.  Exercicio 07'                +
                 '\n12.  Exercicio 08'                +
                 '\n13.  Exercicio 09'                +
-                '\n14.  Exercicio 10'                )
+                '\n14.  Exercicio 10'                +
+                '\n15.  Exercicio 11'                +
+                '\n16.  Exercicio 12'                +
+                '\n17.  Exercicio 13'                +
+                '\n18.  Exercicio 14'                +
+                '\n19.  Exercicio 15'                )
 
     def operacoes(self):
         while(self.opcao != 1):
@@ -92,5 +97,25 @@ class Control:
 
             elif self.opcao == 14:
                 print(f'Os números primos são: \n{self.modelo.exercicioDez()}')
+
+            elif self.opcao == 15:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioOnze(num))
+
+            elif self.opcao == 16:
+                resultado = ""
+                num = int(input("Informe um número: "))
+                print(f'O fatorial de {num} é:{resultado} {self.modelo.exercicioDoze(num)}')
+
+            elif self.opcao == 17:
+                print(self.modelo.exercicioTreze())
+
+            elif self.opcao == 18:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioQuatorze(num))
+
+            elif self.opcao == 19:
+                num = int(input("Informe um número: "))
+                print(f'A soma de {num} é: {self.modelo.exercicioQuinze(num)}')
             else:
                 print('Opção escolida não é válida!')

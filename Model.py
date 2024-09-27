@@ -44,7 +44,7 @@ class Model:
         return resultado
 
     def exercicioCinco(self, num):
-        if num %2 == 0:
+        if num % 2 == 0:
             return f'O número {num} é par'
         else:
             return f'O número {num} é impar'
@@ -132,3 +132,44 @@ class Model:
             resto += num % 10
             num = int (num / 10)
         return resto
+    def exercicioDezesseis(self, num):
+        impar = ""
+        par = ""
+        for i in range(1, num, 1):
+            if i % 2 == 0:
+                par += f'\n {i}'
+            else:
+                impar += f'\n {i}'
+        return f'Os valores pares são: {par} \n Os valores impares são {impar}'
+    def exercicioDezessete(self, num):
+        primos = ""
+        notPrimos = ""
+        for i in range(1, num, 1):
+            if i == 2 or i == 3 or i == 5:
+                primos += f'\n {i}'
+            elif i % 2 != 0 and i % 3 != 0 and i % 5 != 0:
+                primos += f'\n {i}'
+            else:
+                notPrimos += f'\n {i}'
+        return f'Os números primos são: {primos} \n Os numeros não primos são: {notPrimos}'
+    def exercicioDezoito(self, num):
+            if num % 2 == 0:
+                return f'O resultado da sequencia de Collatz é: {num / 2}'
+            else:
+                return f'O resultado da sequencia de Collatz é: {3 * num + 1}'
+    def exercicioDezenove(self, num):
+        soma = 0
+        for i in range(1, num + 1, 1):
+            soma += i
+        return f'A soma dos números pares e impares de 1 até {num} é: {soma}'
+    def exercicioVinte(self, num):
+        somaDiv = 0
+        for i in range(1, num, 1):
+            if num % i == 0:
+                somaDiv += i
+
+        if num == somaDiv:
+           return f'{num} é um número perfeito'
+        else:
+            return f'{num} não é um número perfeito'
+

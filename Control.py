@@ -25,7 +25,12 @@ class Control:
                 '\n16.  Exercicio 12'                +
                 '\n17.  Exercicio 13'                +
                 '\n18.  Exercicio 14'                +
-                '\n19.  Exercicio 15'                )
+                '\n19.  Exercicio 15'                +
+                '\n20.  Exercicio 16'                +
+                '\n21.  Exercicio 17'                +
+                '\n22.  Exercicio 18'                +
+                '\n23.  Exercicio 19'                +
+                '\n24.  Exercicio 20'                )
 
     def operacoes(self):
         while(self.opcao != 1):
@@ -117,5 +122,25 @@ class Control:
             elif self.opcao == 19:
                 num = int(input("Informe um número: "))
                 print(f'A soma de {num} é: {self.modelo.exercicioQuinze(num)}')
+
+            elif self.opcao == 20:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioDezesseis(num))
+
+            elif self.opcao == 21:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioDezessete(num))
+
+            elif self.opcao == 22:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioDezoito(num))
+
+            elif self.opcao == 23:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioDezenove(num))
+
+            elif self.opcao == 24:
+                num = int(input("Informe um número: "))
+                print(self.modelo.exercicioVinte(num))
             else:
                 print('Opção escolida não é válida!')
